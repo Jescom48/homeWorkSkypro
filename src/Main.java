@@ -2,7 +2,7 @@
 public class Main {
 
     // метод к задаче 1
-    public static void checkLeapYear (int year){
+    public static void checkLeapYear(int year) {
         if (year >= 1584 && year % 400 == 0) {
             System.out.println(year + " год является високосным");
         } else if (year % 4 == 0 && year % 100 != 0) {
@@ -13,9 +13,9 @@ public class Main {
     }
 
     // метод к задаче 2
-    public static void checkOSAndYear (int os, int year) {
+    public static void checkOSAndYear(int os, int year) {
 
-        if (os == 0 && year < 2015){
+        if (os == 0 && year < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         } else if (os == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
@@ -27,7 +27,7 @@ public class Main {
     }
 
     // метод к задаче 3
-    public static void chekDeliveryDays (int distance){
+    public static void chekDeliveryDays(int distance) {
         if (distance < 20) {
             System.out.println("Потребуется дней: 1");
         } else if (distance < 60) {
