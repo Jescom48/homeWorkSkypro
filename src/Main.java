@@ -6,6 +6,19 @@ public class Main {
         // Задача 1
 
 
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = lastName + ' ' + firstName + ' ' + middleName + '.';
+
+        System.out.println(" Ф.И.О. сотрудника - " + fullName);
+
+        System.out.println();
+        // Задача 2
+
+        String upperCaseFullName = fullName.toUpperCase();
+        System.out.println("Данные Ф.И.О. сотрудника для заполнения отчета - " + upperCaseFullName);
+
         int[] inputArray1 = {10000, 12750, 3030, 700, 8250};
         float[] outputArray1 = new float[4];
         int sum = 0;
@@ -50,6 +63,11 @@ public class Main {
 
         System.out.println();
         // Задача 3
+
+
+        fullName = "Иванов Семён Семёнович";
+        String replaceFullName = fullName.replace('ё', 'е');
+        System.out.println("Данные Ф.И.О. сотрудника - " + replaceFullName);
 
         int[] inputArray3 = {7000, 2000, 4000, 6000, 8000};
         boolean[] outputArray3 = new boolean[inputArray3.length];
@@ -364,6 +382,7 @@ public class Main {
             result = multiplierNumber * i;
             System.out.println(multiplierNumber + "*" + i + "=" + result);
         }
+
 
 
     }
