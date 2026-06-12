@@ -12,6 +12,7 @@ public class Main {
         }
     }
 
+
     // метод к задаче 2
     public static void checkOSAndYear(int os, int year) {
 
