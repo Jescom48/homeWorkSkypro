@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 
 public class Main {
 
@@ -15,11 +16,12 @@ public class Main {
     // метод к задаче 2
     public static void checkOSAndYear(int os, int year) {
 
-        if (os == 0 && year < 2015) {
+        int currentYear = LocalDate.now().getYear();
+        if (os == 0 && year < currentYear) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         } else if (os == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (os == 1 && year < 2015) {
+        } else if (os == 1 && year < currentYear) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         } else if (os == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
@@ -27,7 +29,7 @@ public class Main {
     }
 
     // метод к задаче 3
-    public static void chekDeliveryDays(int distance) {
+    public static void checkDeliveryDays(int distance) {
         if (distance < 20) {
             System.out.println("Потребуется дней: 1");
         } else if (distance < 60) {
@@ -49,14 +51,14 @@ public class Main {
         // Задача 2
 
         int clientOS = 1;
-        int clientDeviceYear = 2026;
+        int clientDeviceYear = 2022;
         checkOSAndYear(clientOS, clientDeviceYear);
 
         System.out.println();
         // Задача 3
 
         int deliveryDistance = 15;
-        chekDeliveryDays(deliveryDistance);
+        checkDeliveryDays(deliveryDistance);
 
     }
 }
