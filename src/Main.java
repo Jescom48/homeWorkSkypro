@@ -22,14 +22,14 @@ public class Main {
         } else if (os == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else if (os == 1 && year < currentYear) {
-            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else if (os == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
     }
 
     // метод к задаче 3
-    public static void checkDeliveryDays(int distance) {
+    public static void calculationDeliveryDays(int distance) {
         if (distance < 20) {
             System.out.println("Потребуется дней: 1");
         } else if (distance < 60) {
@@ -58,7 +58,7 @@ public class Main {
         // Задача 3
 
         int deliveryDistance = 15;
-        checkDeliveryDays(deliveryDistance);
+        calculationDeliveryDays(deliveryDistance);
 
     }
 }
